@@ -7,7 +7,7 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export EDITOR="vim"
 
 # Alias
-alias ls="exa -al --group-directories-first"
+alias ls="exa -a --group-directories-first"
 alias free="free -h"
 
 # Alias - sudo commands
@@ -26,9 +26,3 @@ alias config="git --git-dir=$HOME/config.git --work-tree=$HOME"
 # Completes
 complete -cf sudo
 complete -c man
-
-##-----------------------------------------------------
-## synth-shell-prompt.sh
-if [ -f /home/porpyry/.config/synth-shell/synth-shell-prompt.sh ] && [ -n "$( echo $- | grep i )" ]; then
-  source /home/porpyry/.config/synth-shell/synth-shell-prompt.sh
-fi
