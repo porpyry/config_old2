@@ -22,6 +22,9 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
     unset f
 fi
 
+# Display
+xrandr --output eDP --set TearFree on &
+
 # Numlock
 numlockx on &
 
@@ -51,8 +54,11 @@ emacs --daemon &
 # Volume OSD
 volnoti &
 
+# Compositor
+picom &
+
 # Dwm bar
-$HOME/scripts/dwm-date.sh &
+$HOME/scripts/status &
 
 # Dwm
 while true; do

@@ -33,7 +33,7 @@
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
 (setq doom-font (font-spec :family "JetBrains Mono" :size 18))
-(setq doom-theme 'doom-one)
+(setq doom-theme 'doom-horizon)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -82,3 +82,6 @@
 
 ;; Exit confirm message
 (setq confirm-kill-emacs nil)
+
+(setq-default indent-tabs-mode nil) ;; Disable indent with tabs
+(setq default-tab-width 4)          ;; Set default indent width

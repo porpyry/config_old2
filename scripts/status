@@ -1,0 +1,14 @@
+#!/bin/sh
+
+i=0
+j=0
+while true; do
+    j=$((i%60))
+    if [ $j -eq 0 ]; then
+        battery=$(acpi | cut -d',' -f2 | tr -d ' ')
+    fi
+    date=$(date +"%a %Y-%m-%d %H:%M:%S")
+    xsetroot -name "Battery $battery   $date"
+    i=$((i+1))
+    sleep 1
+done
