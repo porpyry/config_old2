@@ -25,6 +25,9 @@ fi
 # Display
 xrandr --output eDP --set TearFree on &
 
+# Font
+xsettingsd &
+
 # Numlock
 numlockx on &
 

@@ -22,8 +22,8 @@ set softtabstop=4
 set tabstop=4
 
 " Style
-let g:airline_theme = 'codedark'
-colorscheme codedark
+"let g:airline_theme = 'codedark'
+"colorscheme codedark
 set cursorline
 set cursorcolumn
 highlight CursorLine ctermbg=235 cterm=bold
