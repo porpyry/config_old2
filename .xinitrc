@@ -1,25 +1,25 @@
 #!/bin/sh
 sysresources=/etc/X11/xinit/.Xresources
 if [ -f $sysresources ]; then
-    xrdb -merge $sysresources
+  xrdb -merge $sysresources
 fi
 sysmodmap=/etc/X11/xinit/.Xmodmap
 if [ -f $sysmodmap ]; then
-    xmodmap $sysmodmap
+  xmodmap $sysmodmap
 fi
 userresources=$HOME/.Xresources
 if [ -f "$userresources" ]; then
-    xrdb -merge "$userresources"
+  xrdb -merge "$userresources"
 fi
 usermodmap=$HOME/.Xmodmap
 if [ -f "$usermodmap" ]; then
-    xmodmap "$usermodmap"
+  xmodmap "$usermodmap"
 fi
-if [ -d /etc/X11/xinit/xinitrc.d ] ; then
-    for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
-        [ -x "$f" ] && . "$f"
-    done
-    unset f
+if [ -d /etc/X11/xinit/xinitrc.d ]; then
+  for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
+    [ -x "$f" ] && . "$f"
+  done
+  unset f
 fi
 
 # Display
@@ -57,13 +57,10 @@ emacs --daemon &
 # Volume OSD
 volnoti &
 
-# Compositor
-picom &
-
 # Dwm bar
 $HOME/scripts/status &
 
 # Dwm
 while true; do
-    dwm >/dev/null 2>&1
+  dwm >/dev/null 2>&1
 done

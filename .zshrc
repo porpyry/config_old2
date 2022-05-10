@@ -28,6 +28,11 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export EDITOR="vim"
 
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_STATE_HOME="$HOME/.local/state"
+
 # Alias
 alias ls="exa --group-directories-first"
 alias free="free -h"
