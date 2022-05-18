@@ -1,6 +1,6 @@
 " Vim-plug
+" PlugIntall
 call plug#begin()
-Plug 'vim-airline/vim-airline'
 Plug 'tomasiser/vim-code-dark'
 call plug#end()
 

@@ -10,6 +10,7 @@ HISTFILE=~/.cache/zsh/history
 # Basic auto/tab complete:
 autoload -U compinit
 zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zmodload zsh/complist
 compinit -i
 _comp_options+=(globdots) # Include hidden files.
@@ -47,7 +48,7 @@ alias setclip="xclip -selection c"
 alias getclip="xclip -selection c -o"
 
 # Alias - git
-alias config="git --git-dir=$HOME/config.git --work-tree=$HOME"
+alias config="git --git-dir=$HOME/.config.git --work-tree=$HOME"
 
 # Plugin
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null

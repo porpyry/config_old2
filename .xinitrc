@@ -52,13 +52,13 @@ nimf &
 nitrogen --random --set-zoom-fill &
 
 # Emacs daemon
-emacs --daemon &
+#emacs --daemon &
 
 # Volume OSD
-volnoti &
+volnoti -t 1 &
 
 # Dwm bar
-$HOME/scripts/status &
+$HOME/Scripts/status &
 
 # Dwm
 while true; do
