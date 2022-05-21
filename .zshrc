@@ -34,9 +34,18 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
 
-# Alias
+### ALIASES ###
 alias ls="exa --group-directories-first"
+alias grep="grep --color=auto"
+alias mkdir="mkdir -pv"
 alias free="free -h"
+alias ..="cd .."
+alias ...="cd ../.."
+alias /="cd /"
+alias mv="mv -i"
+alias cp="cp -i"
+alias rm="rm -i"
+alias ln="ln -i"
 
 # Alias - sudo commands
 alias pQ="sudo pacman -Q"
