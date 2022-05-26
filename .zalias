@@ -1,0 +1,24 @@
+#!/bin/sh
+
+alias ls="exa --group-directories-first"
+alias lsal="exa --group-directories-first -al"
+alias tree="exa --tree"
+alias grep="grep --color=auto"
+alias mkdir="mkdir -pv"
+alias free="free -h"
+alias ..="cd .."
+alias ...="cd ../.."
+alias /="cd /"
+alias mv="mv -i"
+alias cp="cp -i"
+alias rm="rm -i"
+alias ln="ln -i"
+
+alias pQ="sudo pacman -Q"
+alias pS="sudo pacman -S"
+alias pR="sudo pacman -R"
+
+alias setclip="xclip -selection c"
+alias getclip="xclip -selection c -o"
+
+alias config="git --git-dir=$HOME/.config.git --work-tree=$HOME"

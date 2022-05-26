@@ -36,10 +36,9 @@ xset r rate 200 &
 
 # Touchpad
 xinput set-prop "SYNA309F:00 06CB:CD0B Touchpad" "libinput Tapping Enabled" 1 &
-#xinput set-prop "SYNA309F:00 06CB:CD0B Touchpad" "libinput Click Method Enabled" 0 0 &
 
 # Mouse pointer
-#xsetroot -cursor_name left_ptr &
+xsetroot -cursor_name left_ptr &
 
 # Hangul input method
 export GTK_IM_MODULE=nimf
@@ -50,17 +49,23 @@ nimf &
 
 # Background image
 nitrogen --random --set-zoom-fill &
+#nitrogen --restore &
 
 # Emacs daemon
-#emacs --daemon &
+emacs --daemon &
 
 # Volume OSD
 volnoti -t 1 &
 
 # Dwm bar
-$HOME/Scripts/status &
+#$HOME/Scripts/status &
 
 # Dwm
-while true; do
-  dwm >/dev/null 2>&1
-done
+#while true; do
+#  dwm >/dev/null 2>&1
+#done
+
+# Xmonad
+#exec xmonad
+#exec $HOME/.cache/xmonad/xmonad-x86_64-linux
+exec $HOME/.xmonad/xmonad-x86_64-linux
