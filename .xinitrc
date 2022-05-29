@@ -58,14 +58,14 @@ emacs --daemon &
 volnoti -t 1 &
 
 # Dwm bar
-#$HOME/Scripts/status &
+$HOME/Scripts/status &
 
 # Dwm
-#while true; do
-#  dwm >/dev/null 2>&1
-#done
+while true; do
+  dwm >/dev/null 2>&1
+done
 
 # Xmonad
 #exec xmonad
 #exec $HOME/.cache/xmonad/xmonad-x86_64-linux
-exec $HOME/.xmonad/xmonad-x86_64-linux
+#exec $HOME/.xmonad/xmonad-x86_64-linux
